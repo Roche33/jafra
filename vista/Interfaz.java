@@ -30,6 +30,7 @@ public class Interfaz extends JFrame{
         botonAgregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 panelAgregar();
             }
         });
@@ -38,6 +39,7 @@ public class Interfaz extends JFrame{
         botonBorrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                
                 panelEliminar();
             }
         });
@@ -92,7 +94,6 @@ public class Interfaz extends JFrame{
         panelEliminar.setLayout(new FlowLayout());
         panelEliminar.add(new JLabel("Eliminar producto"));
         
-        setGlassPane(panelEliminar);
         panelEliminar.setVisible(true);
     }
 
